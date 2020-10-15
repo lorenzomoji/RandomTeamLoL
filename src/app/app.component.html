@@ -1,0 +1,6 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<app-header></app-header>
+    <app-home (propagar)="procesarPropagar($event)" (propagarChamps)="procesarPropagarChamps($event)" *ngIf="team.length === 0"></app-home>
+    <app-random-team *ngIf="team.length !== 0" [randomTeam]="team" [champions]="this.champions"></app-random-team>
+<app-footer></app-footer>
+

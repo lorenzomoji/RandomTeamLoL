@@ -1,0 +1,183 @@
+.contenedorImagen {
+    height: 100%;
+}
+
+.contenedorRol > img {
+    width: 75px;
+}
+
+.rol {
+    text-align: center;
+    margin-top: 3%;
+}
+
+#dos {
+    background-color: black;
+    height: 100px;
+}
+
+#tres {
+    background-color: blueviolet;
+    height: 100px;
+}
+
+#cuatro {
+    background-color: burlywood;
+    height: 100px;
+}
+
+#cinco {
+    background-color: coral;
+    height: 100px;
+}
+
+img {
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
+}
+
+.container {
+    max-width: 1500px;
+    height: 900px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.row {
+    height: 100%;
+}
+
+#rowCampeones {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.campeones {
+    object-position: 60% center;
+    border: 3px solid black;
+}
+
+#suppLogo {
+    width: 70px;
+    margin-bottom: 5px;
+}
+
+.nombreLinea {
+    font-family: 'Victoire';
+}
+
+#campeonTop {
+    animation-duration: 7s;
+    animation-name: slideUp;
+}
+
+#campeonJungla {
+    animation-duration: 8s;
+    animation-name: slideUp;
+}
+
+#campeonMid {
+    animation-duration: 6.5s;
+    animation-name: slideUp;
+}
+
+#campeonBot {
+    animation-duration: 5.5s;
+    animation-name: slideUp;
+}
+
+#campeonSupp {
+    animation-duration: 7.5s;
+    animation-name: slideUp;
+}
+
+@keyframes slideUp {
+    0% {
+        object-position: 60% -650px;
+        border: 0;
+        visibility: visible;
+    }
+
+    3% {
+        object-position: 60% -650px;
+        border: 0;
+        visibility: visible;
+    }
+
+    10% {
+        object-position: 60% 650px;
+        visibility: visible;
+    }
+
+    11% {
+        visibility: hidden;
+        object-position: 60% 650px;
+    }
+
+    20% {
+        object-position: 60% 650px;
+        visibility: visible;
+    }
+
+    21% {
+        object-position: 60% 650px;
+        visibility: hidden;
+    }
+
+    30% {
+        object-position: 60% -650px;
+        visibility: hidden;
+    }
+
+    40% {
+        object-position: 60% 650px;
+        visibility: visible;
+    }
+
+    41% {
+        object-position: 60% 650px;
+        visibility: hidden;
+    }
+
+    50% {
+        object-position: 60% -650px;
+        visibility: hidden;
+    }
+
+    60% {
+        object-position: 60% 650px;
+        visibility: visible;
+    }
+
+    61% {
+        object-position: 60% 650px;
+        visibility: hidden;
+    }
+
+    70% {
+        object-position: 60% -650px;
+        visibility: hidden;
+    }
+
+    80% {
+        object-position: 60% 650px;
+        visibility: visible;
+    }
+
+    81% {
+        object-position: 60% 650px;
+        visibility: hidden;
+    }
+   
+    90% {
+        object-position: 60% -650px;
+        visibility: hidden;
+    }
+
+    100% {
+        object-position: 60% center;
+        visibility: visible;
+        border: 0;
+    }
+}

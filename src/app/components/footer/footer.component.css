@@ -1,0 +1,28 @@
+footer {
+    margin-top: 100px;
+    height: 150px;
+    background-color: #f8f9fa;
+}
+
+footer > .row {
+    margin-right: 0;
+    height: 100%;
+    align-content: center;
+    margin-left: 5%;
+}
+
+#contenedorRedesSociales {
+    display: flex;
+    justify-content: center;
+}
+
+#contenedorRedesSociales > h6 {
+    align-self: center;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}

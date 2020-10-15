@@ -1,0 +1,56 @@
+
+<div class="container">
+  <div class="row" id="rowCampeones">
+    <!-- TOP -->
+    <div class="col rol">
+      <h1 class="nombreLinea">TOP</h1>
+      <div class="contenedorRol">
+        <img src="https://members.elo-boost.net/images/roles/top.png">
+      </div>
+      <div class="contenedorImagen">
+        <img [src]=this.champions[this.randomTeam[0]].img  class="campeones" id="campeonTop">
+      </div>
+    </div>
+    <!-- JUNGLER -->
+    <div class="col rol">
+      <h1 class="nombreLinea">JUNGLER</h1>
+      <div class="contenedorRol">
+        <img src="https://members.elo-boost.net/images/roles/jungle.png">
+      </div>
+      <div class="contenedorImagen">
+        <img [src]=this.champions[this.randomTeam[1]].img  class="campeones" id="campeonJungla">
+      </div>
+    </div>
+    <!-- MIDDLE -->
+    <div class="col rol">
+      <h1 class="nombreLinea">MID</h1>
+      <div class="contenedorRol">
+        <img src="https://pbs.twimg.com/profile_images/1113022044348702720/657tJDq8.png">       
+      </div>
+      <div class="contenedorImagen">
+        <img [src]=this.champions[this.randomTeam[2]].img class="campeones" id="campeonMid">
+      </div>
+    </div>
+    <!-- BOTTOM -->
+    <div class="col rol">
+      <h1 class="nombreLinea">ADC</h1>
+      <div class="contenedorRol">
+        <img src="https://members.elo-boost.net/images/roles/ad.png" alt="">
+      </div>
+      <div class="contenedorImagen">
+        <img [src]=this.champions[this.randomTeam[3]].img class="campeones" id="campeonBot">
+      </div>
+    </div>
+    <!-- SUPP -->
+    <div class="col rol">
+      <h1 class="nombreLinea">SUPPORT</h1>
+      <div class="contenedorRol">
+        <img src="https://members.elo-boost.net/images/roles/support.png" id="suppLogo">
+      </div>
+      <div class="contenedorImagen">
+        <img [src]=this.champions[this.randomTeam[4]].img class="campeones" id="campeonSupp">
+      </div>
+    </div>
+  </div>
+
+</div>

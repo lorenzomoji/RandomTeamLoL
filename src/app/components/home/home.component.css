@@ -1,0 +1,66 @@
+
+#contenedorPersonajes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    width: 70%;
+    margin-top: 50px;
+}
+
+#contenedorLista {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+#listaPersonajes {
+    width: 80%;
+}
+
+#contenedorBuscador {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.input-group {
+    width: 50%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+li {
+    padding: 0.5px;
+}
+
+#contenedorBans {
+    display: flex;
+    justify-content: center;
+}
+
+#contenedorBans > h3 {
+    margin-top: 50px;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+#bans {
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
