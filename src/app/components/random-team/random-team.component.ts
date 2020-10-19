@@ -15,6 +15,7 @@ export class RandomTeamComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
 
 }

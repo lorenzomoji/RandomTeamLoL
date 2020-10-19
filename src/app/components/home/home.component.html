@@ -23,7 +23,7 @@
 <div id="container">
   <ul>
     <li *ngFor="let champion of this.champions | filter: filterChampions; let i = index">
-      <img [src]=champion.icon (click)="banPersonaje(i)">
+      <img [src]=champion.icon (click)="banPersonaje(champion)">
     </li>
   </ul>  
 </div>

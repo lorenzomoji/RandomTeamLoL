@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
   champions: Champion[] = championsLol;
   championsBan: Champion[] = [];
   filterChampions = '';
-  maximo = 151;
+  ultimoRandom: number = 0;
 
   constructor() {
     this.champions = championsLol;
@@ -25,28 +25,31 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
-  banPersonaje(indice: number) {
+  banPersonaje(campeon: any) {
     if (this.championsBan.length < 10) {
-      this.championsBan.push(this.champions[indice]);
-      this.champions = this.champions.filter(champion => champion.name !== this.champions[indice].name);
+      this.championsBan.push(campeon);
+      this.champions = this.champions.filter(champion => champion.name !== campeon.name);
     }
   }
 
   generarTeam() {
-    let team = [this.calcularRandom(1), this.calcularRandom(2), this.calcularRandom(3), this.calcularRandom(4), this.calcularRandom(5)];
+    let team = [this.calcularRandom(), this.calcularRandom(), this.calcularRandom(), this.calcularRandom(), this.calcularRandom()];
     this.propagar.emit(team);
     this.propagarChamps.emit(this.champions);
   }
 
-  calcularRandom(veces: number) {
-    this.maximo = 151;
+  calcularRandom() {
+    let maximo = 151;
     const minimo = 1;
-    const numeroPosibilidades = this.maximo - minimo;
+    const numeroPosibilidades = maximo - minimo;
     var aleatorio = Math.random() * (numeroPosibilidades);
-    aleatorio = Math.floor(aleatorio);
-    this.banPersonaje(aleatorio + minimo);
-    this.maximo = this.maximo - veces;
-    return aleatorio + minimo;
+    aleatorio = Math.floor(aleatorio + minimo);
+    if (this.ultimoRandom !== aleatorio) {
+      this.ultimoRandom = aleatorio;
+      return aleatorio;
+    } else {
+      this.ultimoRandom = aleatorio;
+    }
   }
 
 }

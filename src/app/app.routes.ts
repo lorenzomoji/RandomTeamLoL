@@ -6,6 +6,7 @@ import { RandomTeamComponent } from './components/random-team/random-team.compon
 const APP_ROUTES: Routes = [
     {path: '', component: HomeComponent},
     {path: 'random-team', component: RandomTeamComponent},
+    {path: '', pathMatch: 'full', redirectTo: 'home'},
     {path: '**', pathMatch: 'full',  redirectTo: 'home'}
 ];
 
